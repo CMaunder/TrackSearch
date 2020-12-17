@@ -1,0 +1,37 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: white;
+  padding: 1%;
+  font-size: 15px;
+}
+
+.TrackSearch-ContentsUndefined {
+  text-align: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.TrackSearch-Contents {
+  text-align: center;
+  align-items: center;
+}
+
+.TracksDisplay-noTracks {
+  color: red;
+}
+
+.TracksDisplay-Results {
+  text-align: left;
+  margin-left: 40%;
+  font-size: 20px;
+}
+
+.TracksDisplay-TrackArtist {
+  margin-top: 10px;
+  font-size: 24px;
+}
