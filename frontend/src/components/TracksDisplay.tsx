@@ -20,7 +20,7 @@ const TracksDisplay: React.FC<TracksDisplayProps> = (props: TracksDisplayProps )
         if(props.tracks === undefined) {
             return <React.Fragment />;
         } else if(props.tracks.length !== 0) {
-            return <div className="TracksDisplay-Results"><br/> {props.tracks.map((track, index) => 
+            return <div className="TracksDisplay-Results">{props.tracks.map((track, index) => 
             <Grow 
                 key={index}
                 in={props.tracks?.length !== 0}

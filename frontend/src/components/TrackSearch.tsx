@@ -83,7 +83,7 @@ const TrackSearch: React.FC = () => {
         <div className={(returnedTracks === undefined || returnedTracks.length === 0) ? "TrackSearch-ContentsUndefined" : "TrackSearch-Contents"}>
             <FormControl component="fieldset">
                 <FormLabel component="legend">Search by Track Id or Artist</FormLabel>
-                <RadioGroup aria-label="searchType" name="searchType1" value={searchType} onChange={handleSearchTypeChange}>
+                <RadioGroup id="TrackSearch-SelectSearchType" aria-label="searchType" name="searchType1" value={searchType} onChange={handleSearchTypeChange}>
                     <FormControlLabel 
                         value="id" 
                         control={<Radio color="primary"/>} 
@@ -97,7 +97,8 @@ const TrackSearch: React.FC = () => {
                 </RadioGroup>
             </FormControl><br/>
             <TextField 
-                id="outlined-basic" 
+                id="searchbox"
+                autoFocus
                 label={renderLabel()} 
                 variant="outlined"
                 onChange={handleSearchFieldChange}
